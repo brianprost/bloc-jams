@@ -4,30 +4,41 @@
     <title>Bloc Jams</title>
       <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
       <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
   </head>
   <body class='landing'>
-    <div class='nav-bar'> <!-- Nav Bar -->
-      <img src="/images/blocjams.png">
-    </div>
+    <nav class='player-header-nav navbar'>
+      <div class='container'>
+        <div class='navbar-header'><!-- Nav Bar -->
+          <a class='logo navbar-left'>
+            <img src="/images/blocjams.png">
+          </a>
+        </div>
+      </div>
+    </nav>
     
     <div class='hero-content'> <!-- Hero content -->
-      <h1>Bloc Jams</h1>
-      <h3>Turn the music up to 11!</h3> <!-- up to 11 because Rock N' Roll! -->
+      <div class='container'>
+        <h1>Bloc Jams</h1>
+        <h3>Turn the music up to 11!</h3> <!-- up to 11 because Rock N' Roll! -->
+      </div>
     </div>
     
-    <div class='selling-points'> <!-- Selling points -->
-      <div class='point'>
-        <h5>Choose your music!</h5>
-        <p>The world is full of music; why should you have to listen to music that someone else chose?</p>
-      </div>
-      <div class='point'>
+    <div class='selling-points container'> <!-- Selling points -->
+      <div class='row'>
+        <div class='point col-md-4'>
+          <h5>Choose your music!</h5>
+          <p>The world is full of music; why should you have to listen to music that someone else chose?</p>
+        </div>
+      <div class='point col-md-4'>
         <h5>Unlimited streaming, ad-free.</h5>
         <p>No arbitrary limits, no distractions.</p>
       </div>
-      <div class='point'>
-        <h5>Mobile enabled.</h5>
-        <p>Listen to your music on the go; this service is available on all mobile platforms.</p>
+      <div class='point col-md-4'>
+          <h5>Mobile enabled.</h5>
+          <p>Listen to your music on the go; this service is available on all mobile platforms.</p>
+        </div>
       </div>
     </div>
   </body> 
