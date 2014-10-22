@@ -7,26 +7,32 @@
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
     </head>
-    <body>
+    <body class='player'>
     
-        <div class='nav-bar'>
-            <img src="/images/blocjams.png">
-        </div>
+        <nav class='player-header-nav navbar'>
+            <div class='container'>
+                <div class='navbar-header'>
+                    <a class='logo navbar-left'>
+                        <img src="/images/blocjams.png">
+                    </a>
+                </div>
+            </div>
+        </nav>
         
-        <div class='album-container'>
-            <div class='album-header-container'>
-                <div>
+        <div class='album-container container'>
+            <div class='album-header-container row'>
+                <div class='col-md-3'> <!-- Album Image -->
                     <img src="/images/album-placeholder.png" />
                 </div>
                 
-                <div class='album-information'>
+                <div class='album-header-information col-md-8 col-md-push-1'>
                     <h3>The Colors</h3>
                     <h4>Pablo Picasso</h4>
                     <h5>1881 on Cubism</h5>
                 </div>
                 
                 <div> <!-- Song table --> 
-                    <table class='album-song-listing'>
+                    <table class='album-song-listing table'>
                         <tr>
                             <td class='col-md-1'>1</td>
                             <td class='col-md-9'>Blue</td>
