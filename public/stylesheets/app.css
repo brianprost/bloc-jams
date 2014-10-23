@@ -2,7 +2,7 @@ html {
   height: 100; }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans' sans-serif;
   color: white;
   min-height: 100%;
   background: -webkit-radial-gradient(#2b1339, #380c77);
@@ -72,11 +72,15 @@ body.landing .navbar {
   font-weight: 500; }
 
 .table.album-song-listing {
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 20px; }
 
 .table.album-song-listing td {
   padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.4); }
+
+.album-image {
+  margin-bottom: 45px; }
 
 
 /*# sourceMappingURL=app.css.map*/
