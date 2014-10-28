@@ -28,6 +28,28 @@ var albumMarconi = {
     ]
 };
 
+var albumBuncher = {
+    name: 'Am I Worth Stealing?',
+    artist: 'Pete Buncher',
+    label: 'Bunch Peterson Productions',
+    year: '2014',
+    albumArtUrl: '/images/buncher-album.jpg',
+    songs: [
+        {name: 'Am I Worth Stealing', length: '03:12'},
+        {name: 'Tear Down These Walls', length: '04:07'},
+        {name: 'Consume', length: '02:53'},
+        {name: 'Your Love Never Fails', length: '03:09'},
+        {name: "You Don't Have to Hurt", length: '03:07'},
+        {name: 'God In Love', length: '02:52'},
+        {name: 'Calling Me', length: '03:26'},
+        {name: 'Fly', length: '04:48'},
+        {name: 'Set Us Free', length: '02:58'},
+        {name: 'Sons and Daughters', length: '06:01'},
+        {name: 'Healing', length: '02:30'},
+        {name: 'Fourths Or Fifths', length: '03:11'},
+        ]
+};
+
 var createSongRow = function(songNumber, songName, songLength) {
     var template = 
         '<tr>'
@@ -41,7 +63,6 @@ var createSongRow = function(songNumber, songName, songLength) {
 };
 
 var changeAlbumView = function(album) {
-    var album = albumPicasso;
     
     // Update the album title
     var $albumTitle = $('.album-title');
@@ -72,6 +93,6 @@ var changeAlbumView = function(album) {
 
 if (document.URL.match(/\/album.html/)) {
     $(document).ready(function() {
-        changeAlbumView(albumPicasso);
+        changeAlbumView(albumBuncher);
     });
 }
