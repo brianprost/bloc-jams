@@ -116,7 +116,7 @@ var albumMarconi = {
         {name: 'Hello, Operator?', length: '1:01'},
         {name: 'Ring, Ring, Ring', length: '5:01'},
         {name: 'Fits in Your Pocket', length: '3:21'},
-        {name: 'Can you hear me now?', length: '3:14'},
+        {name: 'Can You Hear Me Now?', length: '3:14'},
         {name: 'Wrong Phone Number', length: '2:15'},
     ]
 };
@@ -140,7 +140,7 @@ var albumBuncher = {
         {name: 'Sons and Daughters', length: '06:01'},
         {name: 'Healing', length: '02:30'},
         {name: 'Fourths Or Fifths', length: '03:11'},
-        ]
+    ]
 };
 
 var createSongRow = function(songNumber, songName, songLength) {
@@ -204,7 +204,9 @@ require("./album");
 var buildAlbumThumbnail = function() {
     var template = 
         '<div class="collection-album-container col-md-2">'
-    +   '   <img src="/images/album-placeholder.png"/>'
+    +   '   <div class="collection-album-image-container">'
+    +   '       <img src="/images/album-placeholder.png"/>'
+    +   '   </div>'
     +   '   <div class="collection-album-info caption">'
     +   '   <p>'
     +   '       <a class="album-name" href="/album.html">Album Name</a>'
@@ -220,6 +222,24 @@ var buildAlbumThumbnail = function() {
     return $(template);
 };
 
+var buildAlbumOverlay = function(albumURL) {
+    var template = 
+        '<div class="collection-album-image-overlay">'
+    +   '   <div class="collection-overlay-content">'
+    +   '       <a class="collection-overlay-button" href="' + albumURL + '">'
+    +   '           <i class="fa fa-play"></i>'
+    +   '       </a>'
+    +   '       &nbsp;'
+    +   '       <a class="collection-overlay-button">'
+    +   '           <i class="fa fa-plus"></i>'
+    +   '       </a>'
+    +   '   </div>'
+    +   '</div>'
+    ;
+    
+    return $(template);
+};
+
 var updateCollectionView = function() {
     var $collection = $(".collection-container .row");
     $collection.empty();
@@ -227,9 +247,19 @@ var updateCollectionView = function() {
         
     for (var i = 0; i < randomNumber; i++) {
         var $newThumbnail= buildAlbumThumbnail();
-        $collection.append($newThumbnail)
+        $collection.append($newThumbnail);
+    }
+    
+    var onHover = function(event) {
+        $(this).append(buildAlbumOverlay("/album.html"));
     };
-}
+
+    var offHover = function(event) {
+        $(this).find('.collection-album-image-overlay').remove();
+    };
+
+    $collection.find('.collection-album-image-container').hover(onHover, offHover);
+};
 
 if (document.URL.match(/\/collection.html/)) {
     $(document).ready(function() {

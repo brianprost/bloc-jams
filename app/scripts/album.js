@@ -23,7 +23,7 @@ var albumMarconi = {
         {name: 'Hello, Operator?', length: '1:01'},
         {name: 'Ring, Ring, Ring', length: '5:01'},
         {name: 'Fits in Your Pocket', length: '3:21'},
-        {name: 'Can you hear me now?', length: '3:14'},
+        {name: 'Can You Hear Me Now?', length: '3:14'},
         {name: 'Wrong Phone Number', length: '2:15'},
     ]
 };
@@ -47,7 +47,7 @@ var albumBuncher = {
         {name: 'Sons and Daughters', length: '06:01'},
         {name: 'Healing', length: '02:30'},
         {name: 'Fourths Or Fifths', length: '03:11'},
-        ]
+    ]
 };
 
 var createSongRow = function(songNumber, songName, songLength) {
