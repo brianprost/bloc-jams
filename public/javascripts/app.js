@@ -233,7 +233,7 @@ var changeAlbumView = function(album) {
 
 if (document.URL.match(/\/album.html/)) {
     $(document).ready(function() {
-        changeAlbumView(albumMarconi);
+        changeAlbumView(albumBuncher);
     });
 }
 });
