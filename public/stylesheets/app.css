@@ -206,7 +206,7 @@ td.song-number {
       display: inline-block;
       vertical-align: middle; }
     .player-bar .volume .seek-bar {
-      display: inlien-block;
+      display: inline-block;
       width: 100px;
       vertical-align: middle; }
 
