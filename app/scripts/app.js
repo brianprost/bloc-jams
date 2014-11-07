@@ -3,7 +3,20 @@
 // require("./album");
 // require("./profile");
 
-angular.module('BlocJams', []).controller('Landing.controller', ['$scope', function($scope) {
+var blocJams = angular.module('BlocJams', ['ui.router']);
+
+blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    
+    $stateProvider.state('landing', {
+        url: '/',
+        controller: 'Landing.controller',
+        templateUrl: '/templates/landing.html'
+    });
+    
+}]);
+
+blocJams.controller('Landing.controller', ['$scope', function($scope) {
     $scope.subText = "Turn the music up to 11!";
     
     $scope.subTextClicked = function() {
