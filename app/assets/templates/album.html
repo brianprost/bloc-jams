@@ -18,7 +18,7 @@
                     <span ng-switch="getSongState(song)">
                         <span ng-switch-when="playing">
                             <a class="album-song-button" ng-click="pauseSong(song)">
-                                <i class="fa fa-pause"></i>
+                                <i class="fa fa-volume-up"></i>
                             </a>
                         </span>
                         <span ng-switch-when="hovered">
@@ -26,13 +26,13 @@
                                 <i class="fa fa-play"></i>
                             </a>
                         </span>
-                    </span>
                     <span ng-switch-default>
-                        {{$index+1}}
+                        {{$index + 1}}
                     </span>
-                    <td class="col-md-9">{{song.name}}</td>
-                    <td class="col-md-2">{{song.length}}</td>
+                    </span>
                 </td>
+                <td class="col-md-9">{{song.name}}</td>
+                <td class="col-md-2">{{song.length}}</td>
             </tr>
         </table>
     </div>
