@@ -325,7 +325,7 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
 }]);
 
 blocJams.controller('Landing.controller', ['$scope', function($scope) {
-    $scope.subText = "Turn the music up to 11!";
+    $scope.subText = "Brenda Soto!";
     
     $scope.subTextClicked = function() {
         $scope.subText += '!';
