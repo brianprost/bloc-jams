@@ -90,7 +90,7 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
 blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
     $scope.albums = [];
     for (var i = 0; i < 33; i++) {
-        $scope.albums.push(angular.copy(albumBuncher));
+        $scope.albums.push(angular.copy(albumPicasso));
     }
     
     $scope.playAlbum = function(album) {
@@ -99,7 +99,7 @@ blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($
 }]);
 
 blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
-    $scope.album = angular.copy(albumBuncher);
+    $scope.album = angular.copy(albumPicasso);
     
     var hoveredSong = null;
     
@@ -182,7 +182,7 @@ blocJams.service('SongPlayer', function () {
             this.currentAlbum = album;
             this.currentSong = song;
             currentSoundFile = new buzz.sound(song.audioUrl, {
-                formats: ["mp3", "opus"], // does Buzz support the Opus codec?
+                formats: ["mp3"], // does Buzz support the Opus codec?
                 preload: true
             });
             
