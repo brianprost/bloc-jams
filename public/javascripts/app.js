@@ -299,6 +299,30 @@ var albumPicasso = {
     ]
 };
 
+// Pete's Album
+
+var albumBuncher = {
+    name: 'Am I Worth Stealing?',
+    artist: 'Pete Buncher',
+    label: 'Bunch Peterson Productions',
+    year: '2014',
+    albumArtUrl: '/images/buncher-album.jpg',
+    songs: [
+        {name: 'Am I Worth Stealing', length: '03:12'},
+        {name: 'Tear Down These Walls', length: '04:07'},
+        {name: 'Consume', length: '02:53'},
+        {name: 'Your Love Never Fails', length: '03:09'},
+        {name: "You Don't Have to Hurt", length: '03:07'},
+        {name: 'God In Love', length: '02:52'},
+        {name: 'Calling Me', length: '03:26'},
+        {name: 'Fly', length: '04:48'},
+        {name: 'Set Us Free', length: '02:58'},
+        {name: 'Sons and Daughters', length: '06:01'},
+        {name: 'Healing', length: '02:30'},
+        {name: 'Fourths Or Fifths', length: '03:11'},
+    ]
+};
+
 var blocJams = angular.module('BlocJams', ['ui.router']);
 
 blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
@@ -347,7 +371,7 @@ blocJams.controller('Landing.controller', ['$scope', function($scope) {
 blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
     $scope.albums = [];
     for (var i = 0; i < 33; i++) {
-        $scope.albums.push(angular.copy(albumPicasso));
+        $scope.albums.push(angular.copy(albumBuncher));
     }
     
     $scope.playAlbum = function(album) {
@@ -356,7 +380,7 @@ blocJams.controller('Collection.controller', ['$scope', 'SongPlayer', function($
 }]);
 
 blocJams.controller('Album.controller', ['$scope', 'SongPlayer', function($scope, SongPlayer) {
-    $scope.album = angular.copy(albumPicasso);
+    $scope.album = angular.copy(albumBuncher);
     
     var hoveredSong = null;
     
@@ -439,7 +463,7 @@ blocJams.service('SongPlayer', function () {
             this.currentAlbum = album;
             this.currentSong = song;
             currentSoundFile = new buzz.sound(song.audioUrl, {
-                formats: ["mp3"],
+                formats: ["mp3", "opus"], // does Buzz support the Opus codec?
                 preload: true
             });
             
