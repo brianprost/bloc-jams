@@ -6,30 +6,32 @@
                 text-align: center;
             }
         }
-        .hero-content {
+    }
+    .hero-content {
+        .container {
             h1, h3 {
                 text-align: center;
             }
         }
-        .selling-points {
-            padding: 0;
-            .point {
-                padding: 3em 0.75em;
-                h5 {
-                    height: 2.25em;
-                }
-                p {
-                    text-align: center;
-                    font-size: 1.25em;
-                }
+    }
+    .selling-points {
+        padding: 0;
+        .point {
+            padding: 3em 0.75em;
+            h5 {
+                height: 2.25em;
+            }
+            p {
+                text-align: center;
+                font-size: 1.25em;
             }
         }
-        .landing-album-list {
-            // example class
-            .album-cover {
-                position: relative;
-                left: calc(50% - 200px);
-            }
+    }
+    .landing-album-list {
+        // example class
+        .album-cover {
+            position: relative;
+            left: calc(50% - 200px);
         }
     }
     

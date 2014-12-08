@@ -12,7 +12,6 @@
   padding: 100px 0; }
 
 .selling-points .point {
-  width: 32%;
   float: left;
   padding: 0 0.5%; }
 
@@ -333,18 +332,18 @@ td.song-number {
 @media (max-width: 768px) {
   .player-header-nav.navbar .navbar-nav li {
     text-align: center; }
-  .player-header-nav.navbar .hero-content h1, .player-header-nav.navbar .hero-content h3 {
+  .hero-content .container h1, .hero-content .container h3 {
     text-align: center; }
-  .player-header-nav.navbar .selling-points {
+  .selling-points {
     padding: 0; }
-    .player-header-nav.navbar .selling-points .point {
+    .selling-points .point {
       padding: 3em 0.75em; }
-      .player-header-nav.navbar .selling-points .point h5 {
+      .selling-points .point h5 {
         height: 2.25em; }
-      .player-header-nav.navbar .selling-points .point p {
+      .selling-points .point p {
         text-align: center;
         font-size: 1.25em; }
-  .player-header-nav.navbar .landing-album-list .album-cover {
+  .landing-album-list .album-cover {
     position: relative;
     left: calc(50% - 200px); }
   .collection-album-container {
