@@ -2,7 +2,7 @@
     <div class="row">
         <div ng-repeat="album in albums" class="collection-album-container col-md-2">
             <div ng-mouseenter="showOverlay = true" ng-mouseleave="showOverlay = false" class="collection-album-image-container">
-                <img ng-src="{{album.albumArtUrl}}">
+                <img class="animated pulse" ng-src="{{album.albumArtUrl}}">
                 <div class="collection-album-image-overlay" ng-show="showOverlay">
                     <div class="collection-overlay-content">
                         <a class="collection-overlay-button" ng-click="playAlbum(album)">
