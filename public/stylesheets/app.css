@@ -3497,6 +3497,8 @@ td.song-number {
     text-align: center; }
   .hero-content .container h1, .hero-content .container h3 {
     text-align: center; }
+  .hero-content .container h1 {
+    font-size: 94pt; }
   .selling-points {
     padding: 0; }
     .selling-points .point {
