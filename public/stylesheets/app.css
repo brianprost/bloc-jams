@@ -3321,6 +3321,8 @@ td.song-number {
   .player-bar .left-controls {
     width: 25%;
     text-align: left; }
+    .player-bar .left-controls :hover {
+      color: #d2287b; }
   .player-bar .right-controls {
     width: 25%;
     text-align: right; }
@@ -3386,7 +3388,7 @@ td.song-number {
   position: relative;
   cursor: pointer; }
   .slider .fill {
-    background: white;
+    background: #d2287b;
     width: 36%;
     height: 5px;
     border-radius: 2px; }
