@@ -3510,7 +3510,8 @@ td.song-number {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 280px; }
+    width: 280px;
+    text-align: center; }
   .album-container {
     position: relative;
     margin-left: auto;
