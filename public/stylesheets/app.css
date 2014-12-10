@@ -3496,7 +3496,7 @@ td.song-number {
   .selling-points {
     padding: 0; }
     .selling-points .point {
-      padding: 3em 0.75em; }
+      padding: 3em 2em; }
       .selling-points .point h5 {
         height: 2.25em; }
       .selling-points .point p {
@@ -3504,7 +3504,10 @@ td.song-number {
         font-size: 1.25em; }
   .landing-album-list .album-cover {
     position: relative;
-    left: calc(50% - 200px); }
+    text-align: center;
+    padding: 0.94em 1.8em;
+    max-width: 100%;
+    max-height: 100%; }
   .collection-album-container {
     position: relative;
     margin-left: auto;
