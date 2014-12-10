@@ -3545,5 +3545,13 @@ body.landing .navbar {
     .player-header-nav .navbar-nav a:hover {
       color: rgba(123, 70, 163, 0.9); }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 
 /*# sourceMappingURL=app.css.map*/
