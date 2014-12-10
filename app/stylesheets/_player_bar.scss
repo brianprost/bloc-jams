@@ -6,6 +6,15 @@
     height: 150px;
     background: rgba(255, 255, 255, 0.3);
     z-index: 100;
+    // // need to get that iOS 7 transulucency: https://stackoverflow.com/questions/17034485/ios-7s-blurred-overlay-effect-using-css
+    // // also...where is the transparency coming from before? it wasn't declared anywhere...
+    opacity: 0.4;
+    &:hover {
+        -webkit-transition-duration: 250ms; /* Safari */
+        transition-duration: 250ms;
+        opacity: 1;
+        // what about off-hover?
+    }
     
     a, a:hover {
         color: white;

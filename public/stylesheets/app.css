@@ -3309,7 +3309,13 @@ td.song-number {
   right: 0;
   height: 150px;
   background: rgba(255, 255, 255, 0.3);
-  z-index: 100; }
+  z-index: 100;
+  opacity: 0.4; }
+  .player-bar:hover {
+    -webkit-transition-duration: 250ms;
+    /* Safari */
+    transition-duration: 250ms;
+    opacity: 1; }
   .player-bar a, .player-bar a:hover {
     color: white;
     cursor: pointer;
