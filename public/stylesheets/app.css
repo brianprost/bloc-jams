@@ -3495,10 +3495,12 @@ td.song-number {
 @media (max-width: 768px) {
   .player-header-nav.navbar .navbar-nav li {
     text-align: center; }
-  .hero-content .container h1, .hero-content .container h3 {
-    text-align: center; }
-  .hero-content .container h1 {
-    font-size: 94pt; }
+  .hero-content {
+    padding: 3em 0.1em 5em; }
+    .hero-content .container h1, .hero-content .container h3 {
+      text-align: center; }
+    .hero-content .container h1 {
+      font-size: 94pt; }
   .selling-points {
     padding: 0; }
     .selling-points .point {
