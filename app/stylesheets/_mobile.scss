@@ -20,14 +20,17 @@
     }
     .selling-points {
         padding: 0;
-        .point {
-            padding: 3em 2em;
-            h5 {
-                height: 2.25em;
-            }
-            p {
-                text-align: center;
-                font-size: 1.25em;
+        .row {
+            padding: none;
+            .point {
+                padding: 3em 2em;
+                h5 {
+                    height: 2.25em;
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.25em;
+                }
             }
         }
     }

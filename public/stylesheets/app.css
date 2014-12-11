@@ -3503,13 +3503,15 @@ td.song-number {
       font-size: 94pt; }
   .selling-points {
     padding: 0; }
-    .selling-points .point {
-      padding: 3em 2em; }
-      .selling-points .point h5 {
-        height: 2.25em; }
-      .selling-points .point p {
-        text-align: center;
-        font-size: 1.25em; }
+    .selling-points .row {
+      padding: none; }
+      .selling-points .row .point {
+        padding: 3em 2em; }
+        .selling-points .row .point h5 {
+          height: 2.25em; }
+        .selling-points .row .point p {
+          text-align: center;
+          font-size: 1.25em; }
   .landing-album-list .album-cover {
     position: relative;
     text-align: center;
