@@ -3166,19 +3166,17 @@ Copyright (c) 2014 Daniel Eden
     margin-bottom: 50px;
     font-weight: 300; }
 
-.selling-points {
-  padding: 100px 0; }
-  .selling-points .point {
-    float: left;
-    padding: 0 0.5%; }
-    .selling-points .point h5 {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-align: center;
-      height: 85px; }
-    .selling-points .point p {
-      font-size: 14px; }
+.selling-points .point {
+  float: left;
+  padding: 0 0.5%; }
+  .selling-points .point h5 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    height: 85px; }
+  .selling-points .point p {
+    font-size: 14px; }
 
 .album-header-container {
   margin-top: 55px;
@@ -3303,6 +3301,7 @@ td.song-number {
   padding-left: 5px; }
 
 .player-bar {
+  padding: 20px 0px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -3325,7 +3324,6 @@ td.song-number {
     padding: 0;
     min-height: 100%; }
   .player-bar .left-controls {
-    width: 25%;
     text-align: left; }
     .player-bar .left-controls :hover {
       color: #d2287b; }
@@ -3341,7 +3339,6 @@ td.song-number {
     margin-right: 60px;
     font-size: 30px; }
   .player-bar .currently-playing {
-    width: 50%;
     text-align: center;
     position: relative; }
     .player-bar .currently-playing .song-name, .player-bar .currently-playing .artist-name {
@@ -3373,50 +3370,50 @@ td.song-number {
       width: 100px;
       vertical-align: middle; }
 
-.player-bar-control-group {
-  display: table-cell;
-  vertical-align: middle; }
-
-.seek-control {
-  position: relative; }
-  .seek-control .current-time {
-    position: absolute;
-    top: 10px; }
-  .seek-control .total-time {
-    position: absolute;
-    right: 0;
-    top: 10px; }
-
-.slider {
-  height: 5px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-  position: relative;
-  cursor: pointer; }
-  .slider .fill {
-    background: #d2287b;
-    width: 36%;
+.currently-playing {
+  padding: 40px 0px; }
+  .currently-playing .player-bar-control-group {
+    display: table-cell;
+    vertical-align: middle; }
+  .currently-playing .seek-control {
+    position: relative; }
+    .currently-playing .seek-control .current-time {
+      position: absolute;
+      top: 10px; }
+    .currently-playing .seek-control .total-time {
+      position: absolute;
+      right: 0;
+      top: 10px; }
+  .currently-playing .slider {
     height: 5px;
-    border-radius: 2px; }
-  .slider .thumb {
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    background: white;
-    left: 36%;
-    margin-left: -5px;
-    top: 50%;
-    margin-top: -5px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 100ms ease-in-out; }
-  .slider.active .fill, .slider.active .thumb {
-    transition: none; }
-  .slider:hover .thumb, .slider:active .thumb {
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px; }
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    position: relative;
+    cursor: pointer; }
+    .currently-playing .slider .fill {
+      background: #d2287b;
+      width: 36%;
+      height: 5px;
+      border-radius: 2px; }
+    .currently-playing .slider .thumb {
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      background: white;
+      left: 36%;
+      margin-left: -5px;
+      top: 50%;
+      margin-top: -5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 100ms ease-in-out; }
+    .currently-playing .slider.active .fill, .currently-playing .slider.active .thumb {
+      transition: none; }
+    .currently-playing .slider:hover .thumb, .currently-playing .slider:active .thumb {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px; }
 
 .default-button {
   background-color: #d2287b;
@@ -3501,17 +3498,13 @@ td.song-number {
       text-align: center; }
     .hero-content .container h1 {
       font-size: 94pt; }
-  .selling-points {
-    padding: 0; }
-    .selling-points .row {
-      padding: none; }
-      .selling-points .row .point {
-        padding: 3em 2em; }
-        .selling-points .row .point h5 {
-          height: 2.25em; }
-        .selling-points .row .point p {
-          text-align: center;
-          font-size: 1.25em; }
+  .selling-points .row .point {
+    padding: 3em 2em; }
+    .selling-points .row .point h5 {
+      height: 2.25em; }
+    .selling-points .row .point p {
+      text-align: center;
+      font-size: 1.25em; }
   .landing-album-list .album-cover {
     position: relative;
     text-align: center;
@@ -3529,7 +3522,9 @@ td.song-number {
     margin-left: auto;
     margin-right: auto;
     width: 280px;
-    text-align: center; } }
+    text-align: center; }
+    .album-container img {
+      margin: 0 0 0 -15px; } }
 
 html {
   height: 100; }

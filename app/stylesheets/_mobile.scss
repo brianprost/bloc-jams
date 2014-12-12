@@ -19,9 +19,7 @@
         }
     }
     .selling-points {
-        padding: 0;
         .row {
-            padding: none;
             .point {
                 padding: 3em 2em;
                 h5 {
@@ -64,5 +62,8 @@
         margin-right: auto;
         width: 280px;
         text-align: center;
+        img {
+            margin: 0 0 0 -15px;
+        }
     }
 }
