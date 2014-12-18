@@ -1,4 +1,6 @@
-# Brunch app
+# Bloc Jams
+
+Built by Brian Prost as part of Bloc's Frontend Web Development course.
 
 This is HTML5 application, built with [Brunch](http://brunch.io).
 
