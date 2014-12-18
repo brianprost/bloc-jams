@@ -1,31 +1,46 @@
-    <div class='hero-content'> <!-- Hero content -->
-      <div class='container'>
-        <h1 class='animated bounce'>Bloc Jams</h1>
-        <h3 class='animated bounce' ng-click="subTextClicked()">{{subText}}</h3> <!-- up to 11 because Rock N' Roll! -->
+<div class='hero-content'>
+  <!-- Hero content -->
+  <div class='container'>
+    <h1 class='animated bounce'>Bloc Jams</h1>
+    <h3 class='animated bounce' ng-click="subTextClicked()">{{subText}}</h3>
+    <!-- up to 11 because Rock N' Roll! -->
+  </div>
+</div>
+
+<div class='selling-points container'>
+  <!-- Selling points -->
+  <div class='row'>
+    <div class='point col-sm-4 col-xs-12'>
+      <h5>Choose your music!</h5>
+      <p>The world is full of music; so choose between the three albums on here!</p>
+    </div>
+    <div class='point col-sm-4 col-xs-12'>
+      <h5>Limited streaming, ad-haven.</h5>
+      <p>Arbitrary limits, lots of distractions.</p>
+    </div>
+    <div class='point col-sm-4 col-xs-12'>
+      <h5>Mobile enabled...NEW!</h5>
+      <p>Listen to your music on the go; this service is available on all mobile platforms, except for iOS, cuz u stupid.
+        <p>
+    </div>
+  </div>
+</div>
+
+<div class="landing-album-list container">
+  <div class="row">
+    <div class="col-md-4 col-xs-12" ng-repeat="albumURL in albumURLs">
+      <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+        <div class="flipper">
+          <div class="front">
+            <img class="album-cover crossRotate" ng-src="{{albumURL}}">
+          </div>
+          <div class="back">
+            <h1>The Colors</h1>
+            <h3>Pablo Picasso</h3>
+          </div>
+        </div>
       </div>
     </div>
-    
-    <div class='selling-points container'> <!-- Selling points -->
-        <div class='row'>
-          <div class='point col-sm-4 col-xs-12'>
-            <h5>Choose your music!</h5>
-            <p>The world is full of music; so choose between the three albums on here!</p>
-          </div>
-          <div class='point col-sm-4 col-xs-12'>
-            <h5>Limited streaming, ad-haven.</h5>
-            <p>Arbitrary limits, lots of distractions.</p>
-          </div>
-          <div class='point col-sm-4 col-xs-12'>
-              <h5>Mobile enabled...NEW!</h5>
-              <p>Listen to your music on the go; this service is available on all mobile platforms, except for iOS, cuz u stupid.<p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="landing-album-list container">
-      <div class="row">
-        <div class="col-md-4 col-xs-12" ng-repeat="albumURL in albumURLs">
-          <img class="album-cover crossRotate" ng-src="{{albumURL}}">
-        </div>
-      </div>
-    </div>
+  </div>
+</div>
+</div>
